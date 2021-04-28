@@ -16,10 +16,11 @@ public class Cliente {
         Object resultado;
         
         try{
-            XmlRpcClient client = new XmlRpcClient("http://192.168.197.64:8080");
+            XmlRpcClient cliente = new XmlRpcClient("http://192.168.197.64:8080");
+       
             Vector<String> parametros = new Vector<String>();
             
-            JOptionPane.showMessageDialog(null,"El cliente se ha conectado");
+            JOptionPane.showMessageDialog(null, "El cliente se ha conectado");
             
             while(true){
                 String menu = JOptionPane.showInputDialog(null, "suma de 2 numeros"
@@ -34,7 +35,7 @@ public class Cliente {
                         parametros.addElement(x);
                         parametros.addElement(y);
                         
-                        resultado = client.execute("miServidorRPC.suma", parametros);
+                        resultado = cliente.execute("miServidorRPC.suma", parametros);
                         
                         JOptionPane.showMessageDialog(null, "La suma es: " + resultado);
                         

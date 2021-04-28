@@ -11,7 +11,7 @@ public class Servidor {
 
     public static void main(String[] args) {
         try{
-            JOptionPane.showMessageDialog(null,"Iniciando el Servidor");
+            JOptionPane.showMessageDialog(null, "Iniciando el Servidor");
             
             WebServer server = new WebServer(8080);
             
