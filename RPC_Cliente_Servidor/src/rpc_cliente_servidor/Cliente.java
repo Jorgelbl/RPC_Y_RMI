@@ -16,14 +16,14 @@ public class Cliente {
         Object resultado;
         
         try{
-            XmlRpcClient cliente = new XmlRpcClient("http://192.168.197.64:8080");
+            XmlRpcClient cliente = new XmlRpcClient("http://187.228.114.43:8080");
        
             Vector<String> parametros = new Vector<String>();
             
             JOptionPane.showMessageDialog(null, "El cliente se ha conectado");
             
             while(true){
-                String menu = JOptionPane.showInputDialog(null, "suma de 2 numeros"
+                String menu = JOptionPane.showInputDialog(null, "suma de 2 numeros\n"
                        + "1.-Sumar\n"
                        + "2.-Salir\n", "Cliente Servidor RPC", JOptionPane.DEFAULT_OPTION);
                 
